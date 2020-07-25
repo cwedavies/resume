@@ -1,0 +1,14 @@
+{
+  "name": "resume",
+  "version": "0.1.0",
+  "author": "Cameron W. D. Elvidge <cwedavies@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "yarn run validate",
+    "validate": "ajv -s node_modules/resume-schema/schema.json -d resume.json"
+  },
+  "devDependencies": {
+    "ajv-cli": "^3.2.1",
+    "resume-schema": "^0.1.3"
+  }
+}
